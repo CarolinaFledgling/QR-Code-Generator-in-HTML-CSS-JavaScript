@@ -1,0 +1,27 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper{
+  height: 265px;
+  max-width: 410px;
+  background: rgb(159, 243, 161);
+  border-radius: 7px;
+  padding: 20px 25px 0;
+  transition: height 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.wrapper.active{
+    height: 530px;
+  }
