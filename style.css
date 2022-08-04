@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 16px;
 }
-body{
+body {
   display: flex;
   padding: 0 10px;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .wrapper {
   font-size: 16px;
@@ -24,94 +24,92 @@ body{
   border-radius: 7px;
   padding: 20px 25px 0;
   transition: height 0.2s ease;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper.active{
-    height: 630px;
-  }
+.wrapper.active {
+  height: 630px;
+}
 
-  .qr-code{
-    margin-top: 60px;
-    opacity: 0;
-    display: flex;
-    padding: 33px 0;
-    border-radius: 5px;
-    align-items: center;
-    pointer-events: none;
-    justify-content: center;
-    border: 1px solid #ccc;
-  }
-  .wrapper.active .qr-code{
-    opacity: 1;
-    pointer-events: auto;
-    transition: opacity 0.5s 0.05s ease;
-  }
+.qr-code {
+  margin-top: 60px;
+  opacity: 0;
+  display: flex;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+.wrapper.active .qr-code {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
 
-  .heading-title{
-    margin-bottom: .5rem;
-    font-size: 1.5rem;
-  }
+.heading-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
 
-  .heading-description{
-    margin-bottom: 1rem;
-    font-weight: 300;
-  }
-  .form-input{
-    padding: .5em;
-    width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+.heading-description {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.form-input {
+  padding: 0.5em;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
-  .btn{
-    padding: .5em .8em;
-    border:none;
-    border-radius: 2px;
-  }
+.btn {
+  padding: 0.5em 0.8em;
+  border: none;
+  border-radius: 2px;
+}
 
-  .btn-generate{
-    width: 50%;
-    background-color: rgb(255, 255, 255);
-    transition: background-color 0.5s 0.05s ease;
-    cursor: pointer;
-  }
+.btn-generate {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.5s 0.05s ease;
+  cursor: pointer;
+}
 
-  .btn-generate:hover{
-    background-color:rgb(211, 211, 211)
-  }
+.btn-generate:hover {
+  background-color: rgb(211, 211, 211);
+}
 
- 
-  .btn-reset{
-    width: 50%;
-    background-color: #83d4f4;
-    transition: background-color 0.5s 0.05s ease;
-    cursor: pointer;
-    margin-left: 10px;
-  }
+.btn-reset {
+  width: 50%;
+  background-color: #83d4f4;
+  transition: background-color 0.5s 0.05s ease;
+  cursor: pointer;
+  margin-left: 10px;
+}
 
-  .btn-reset:hover{
-    background-color:rgb(136, 236, 251)
-  }
+.btn-reset:hover {
+  background-color: rgb(136, 236, 251);
+}
 
-  .btn-download{
-    width: 100%;
-    margin-top: 10px;
-    transition: background-color 0.5s 0.05s ease;
-    cursor: pointer;
-  }
-  .btn-download:hover{
-    background-color:rgb(251, 174, 136)
-  }
-  
-  .btns-group{
-    width: 100%;
-    margin-top: 1em;
-    display: flex;
-    justify-content: space-between;
-  }
+.btn-download {
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.5s 0.05s ease;
+  cursor: pointer;
+}
+.btn-download:hover {
+  background-color: rgb(251, 174, 136);
+}
 
-  .from-span{
-    color: red;
+.btns-group {
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
 
-  }
+.from-span {
+  color: red;
+}
