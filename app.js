@@ -62,7 +62,7 @@ function fetchFile(url) {
             console.log("tempUrl", tempUrl);
             let linkTag = document.createElement("a");
             linkTag.href = tempUrl;
-            linkTag.download = "filename";
+            linkTag.download = "qr code file";
             document.body.appendChild(linkTag);
             linkTag.click();
             linkTag.remove();
