@@ -1,9 +1,12 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
+html{
+  font-size: 16px;
 }
 body{
   display: flex;
@@ -11,11 +14,13 @@ body{
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  font-family: 'Open Sans', sans-serif;
 }
-.wrapper{
-  height: 265px;
+.wrapper {
+  font-size: 16px;
+  height: 350px;
   max-width: 410px;
-  background: rgb(159, 243, 161);
+  background: rgb(238, 203, 105);
   border-radius: 7px;
   padding: 20px 25px 0;
   transition: height 0.2s ease;
@@ -23,7 +28,7 @@ body{
 }
 
 .wrapper.active{
-    height: 530px;
+    height: 630px;
   }
 
   .qr-code{
@@ -41,4 +46,72 @@ body{
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.5s 0.05s ease;
+  }
+
+  .heading-title{
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+  }
+
+  .heading-description{
+    margin-bottom: 1rem;
+    font-weight: 300;
+  }
+  .form-input{
+    padding: .5em;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .btn{
+    padding: .5em .8em;
+    border:none;
+    border-radius: 2px;
+  }
+
+  .btn-generate{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.5s 0.05s ease;
+    cursor: pointer;
+  }
+
+  .btn-generate:hover{
+    background-color:rgb(211, 211, 211)
+  }
+
+ 
+  .btn-reset{
+    width: 50%;
+    background-color: #83d4f4;
+    transition: background-color 0.5s 0.05s ease;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .btn-reset:hover{
+    background-color:rgb(136, 236, 251)
+  }
+
+  .btn-download{
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.5s 0.05s ease;
+    cursor: pointer;
+  }
+  .btn-download:hover{
+    background-color:rgb(251, 174, 136)
+  }
+  
+  .btns-group{
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .from-span{
+    color: red;
+
   }

@@ -6,25 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="app.js" defer></script>
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section class="wrapper">
-        <header>
-            <h1>QR Code Generator</h1>
-            <p>Paste a url and create QR code</p>
+        <header class="heading">
+            <h1 class="heading-title">QR Code Generator</h1>
+            <p class="heading-description">Paste a url and create QR code</p>
         </header>
-        <div class="form">
-            <input type="text" spellcheck="false" placeholder="Enter text or url">
-            <button>Generate QR Code</button>
-            <button class="btn-reset">Reset</button>
-        </div>
+        <form action="#" class="form">
+                <label class="form-label" for="url">Enter url:</label>
+                <input id="url" class="form-input" type="url" spellcheck="false" placeholder="https://example.com" requireds>
+                <span class="from-span"></span>
+                <div class="btns-group">
+                    <button class="btn btn-generate">Generate QR Code</button>
+                    <button class="btn btn-reset">Reset</button>
+                </div>
+                <button class="btn btn-download">Download File</button>
+        </form>
         <div class="qr-code">
             <img src="" alt="qr-code">
         </div>
         </div>
+        <script src="./FileSaver.min.js" ></script>
+        <script src="app.js" ></script>
 </body>
 
 </html>
